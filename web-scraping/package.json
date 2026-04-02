@@ -1,0 +1,30 @@
+{
+  "name": "web-scraping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts/scrape-all-products.js",
+  "scripts": {
+    "scrape": "node scripts/scrape-all-products.js",
+    "import:supabase": "node scripts/import-precios-json-to-supabase.js",
+    "embed:pgvector": "node scripts/embed-precios-to-pgvector.js",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.29.2",
+  "dependencies": {
+    "@langchain/community": "^1.1.25",
+    "@langchain/core": "^1.1.36",
+    "@langchain/openai": "^1.3.1",
+    "@supabase/supabase-js": "^2.98.0",
+    "dotenv": "^17.3.1",
+    "langchain": "^1.2.37",
+    "playwright": "^1.58.2"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.1"
+  },
+  "type": "module"
+}
