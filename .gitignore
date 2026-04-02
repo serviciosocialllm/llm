@@ -1,0 +1,14 @@
+# Dependencias y secretos
+node_modules/
+.env
+.env.local
+*.log
+
+# Datos generados (no versionar)
+web-scraping/data/
+
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
